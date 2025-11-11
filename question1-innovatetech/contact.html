@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" class="page-layout">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact InnovateTech Solutions" />
+  <link rel="icon" href="images/favicon.ico" />
+  <title>Contact — InnovateTech Solutions</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="InnovateTech Solutions logo" width="140" height="48" />
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+      <label for="nav-toggle" class="hamburger" aria-hidden="true"><span></span><span></span><span></span></label>
+
+      <nav class="primary-nav" role="navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <a class="btn btn-cta" href="#contact-form">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    <section class="contact container">
+      <h1>Contact Us</h1>
+
+      <h2>Information</h2>
+      <address>
+        InnovateTech Solutions<br>
+        42 Spectrum Park, New Delhi, IN 110001
+      </address>
+      <p><a href="tel:+911100000000">+91 110 000 0000</a> • <a href="mailto:hello@innovatetech.example">hello@innovatetech.example</a></p>
+
+      <h2>Office Hours</h2>
+      <div class="table-wrap">
+        <table>
+          <caption class="sr-only">Office opening hours by day</caption>
+          <thead>
+            <tr><th scope="col">Day</th><th scope="col">Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Mon–Fri</th><td>09:00 – 18:00</td></tr>
+            <tr><th scope="row">Saturday</th><td>10:00 – 14:00</td></tr>
+            <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+          </tbody>
+          <tfoot>
+            <tr><td colspan="2">Public holidays may affect hours.</td></tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <h2 id="contact-form">Project Inquiry Form</h2>
+      <form action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="full-name">Full Name *</label>
+          <input id="full-name" name="full-name" type="text" required />
+
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" />
+
+          <label for="company">Company/Organization</label>
+          <input id="company" name="company" type="text" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Inquiry Details</legend>
+          <label for="service">Service Interest</label>
+          <select id="service" name="service">
+            <option>Web Development</option>
+            <option>Mobile Apps</option>
+            <option>Consulting</option>
+            <option>Other</option>
+          </select>
+
+          <div class="radios">
+            <span>Project Timeline</span>
+            <label><input type="radio" name="timeline" value="ASAP" /> ASAP</label>
+            <label><input type="radio" name="timeline" value="1-3m" /> 1–3 months</label>
+            <label><input type="radio" name="timeline" value="3-6m" /> 3–6 months</label>
+            <label><input type="radio" name="timeline" value="6plus" /> 6+ months</label>
+          </div>
+
+          <label for="budget">Budget Range</label>
+          <input id="budget" name="budget" type="range" min="1" max="5" value="3" />
+          <div aria-hidden="true" class="range-labels">
+            <span>₹</span><span>₹₹</span><span>₹₹₹</span><span>₹₹₹₹</span><span>₹₹₹₹₹</span>
+          </div>
+
+          <div class="checks">
+            <span>Project Type</span>
+            <label><input type="checkbox" name="ptype" value="new" /> New Website</label>
+            <label><input type="checkbox" name="ptype" value="redesign" /> Redesign</label>
+            <label><input type="checkbox" name="ptype" value="mobile" /> Mobile App</label>
+            <label><input type="checkbox" name="ptype" value="ecom" /> E‑commerce</label>
+            <label><input type="checkbox" name="ptype" value="other" /> Other</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Message</legend>
+          <label for="desc">Project Description *</label>
+          <textarea id="desc" name="desc" rows="4" required></textarea>
+
+          <label for="file">Upload Requirements (PDF/DOC only)</label>
+          <input id="file" name="file" type="file" accept=".pdf,.doc,.docx,.txt" />
+          
+          <div class="radios">
+            <span>Preferred Contact Method</span>
+            <label><input type="radio" name="pref" value="email" /> Email</label>
+            <label><input type="radio" name="pref" value="phone" /> Phone</label>
+            <label><input type="radio" name="pref" value="video" /> Video Call</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Terms</legend>
+          <label>
+            <input type="checkbox" name="terms" required />
+            I agree to the Terms of Service and Privacy Policy *
+          </label>
+          <label>
+            <input type="checkbox" name="newsletter" />
+            Subscribe to our newsletter
+          </label>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Submit</button>
+          <button type="reset" class="btn btn-outline">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <address>InnovateTech Solutions • 42 Spectrum Park, New Delhi, IN 110001</address>
+      <p><a href="tel:+911100000000">+91 110 000 0000</a> • <a href="mailto:hello@innovatetech.example">hello@innovatetech.example</a></p>
+      <p class="copyright">&copy; 2025 InnovateTech Solutions</p>
+    </div>
+  </footer>
+</body>
+</html>

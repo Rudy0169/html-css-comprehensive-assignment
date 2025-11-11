@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" class="page-layout">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="InnovateTech Solutions — modern, accessible, responsive technology services." />
+  <link rel="icon" href="images/favicon.ico" />
+  <title>InnovateTech Solutions — Build the Future</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="InnovateTech Solutions logo" width="140" height="48" />
+        <span class="sr-only">InnovateTech Solutions</span>
+      </a>
+
+      <!-- Mobile nav toggle (CSS-only hamburger) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="primary-nav" role="navigation" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn btn-cta" href="#services">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>We build resilient, human‑centered technology</h1>
+          <p class="subhead">From web to mobile to cloud, InnovateTech Solutions delivers systems that scale without drama.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#services">Explore Services</a>
+            <a class="btn btn-outline" href="contact.html">Request a Quote</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img src="images/hero-image.jpg" alt="Abstract futuristic shapes representing innovative technology" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title">Our Services</h2>
+        <div class="cards">
+          <article class="card">
+            <span class="badge">New</span>
+            <h3>Web Development</h3>
+            <p>Accessible, performant web apps using modern standards and progressive enhancement.</p>
+            <a class="card-link" href="about.html#mission">Learn More</a>
+          </article>
+          <article class="card">
+            <span class="badge badge-accent">Pro</span>
+            <h3>Mobile Apps</h3>
+            <p>Robust iOS and Android builds with adaptive layouts and offline‑first capabilities.</p>
+            <a class="card-link" href="about.html#vision">Learn More</a>
+          </article>
+          <article class="card">
+            <h3>Cloud &amp; DevOps</h3>
+            <p>Infrastructure as code, automated pipelines, and observability baked in from day one.</p>
+            <a class="card-link" href="about.html#stats">Learn More</a>
+          </article>
+          <article class="card">
+            <h3>Consulting</h3>
+            <p>Architecture reviews, accessibility audits, and performance tuning for existing systems.</p>
+            <a class="card-link" href="contact.html">Learn More</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About preview -->
+    <section class="about-preview" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">About InnovateTech</h2>
+        <p>We’re a small, focused team that believes in pragmatic engineering, humane design, and radical transparency.</p>
+        <p>Our culture rewards craftsmanship and collaboration. We ship fast, learn faster, and document everything.</p>
+
+        <div class="columns">
+          <article>
+            <h3 id="mission">Our Mission</h3>
+            <p>Empower organizations with resilient technology that’s delightful to use and simple to maintain.</p>
+          </article>
+          <article>
+            <h3 id="vision">Our Vision</h3>
+            <p>Build a future where accessible, privacy‑respecting software is the norm—not the exception.</p>
+          </article>
+          <aside class="stats" aria-labelledby="stats">
+            <h3 id="stats">Quick Stats</h3>
+            <dl>
+              <dt>Projects delivered</dt><dd>120+</dd>
+              <dt>Average TTFB</dt><dd>&lt; 100&nbsp;ms</dd>
+              <dt>Accessibility score</dt><dd>AA+ baseline</dd>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <section>
+        <h2 class="sr-only">Company Contact</h2>
+        <address>
+          InnovateTech Solutions<br/>
+          42 Spectrum Park, New Delhi, IN 110001
+        </address>
+        <p><a href="tel:+911100000000">+91 110 000 0000</a> • <a href="mailto:hello@innovatetech.example">hello@innovatetech.example</a></p>
+      </section>
+      <section class="social">
+        <h2 class="sr-only">Social Links</h2>
+        <ul>
+          <li><a href="#" aria-label="Follow on Twitter">Twitter</a></li>
+          <li><a href="#" aria-label="Follow on LinkedIn">LinkedIn</a></li>
+          <li><a href="#" aria-label="Follow on GitHub">GitHub</a></li>
+        </ul>
+      </section>
+      <p class="copyright">&copy; <span id="year">2025</span> InnovateTech Solutions &middot; All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
